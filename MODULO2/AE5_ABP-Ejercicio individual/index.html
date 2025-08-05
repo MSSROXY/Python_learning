@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="titleHeader">
+        <h1>Perfil</h1>
+      </div>
+      <nav class="navbarHeader">
+        <ul>
+          <li><a>Inicio</a></li>
+          <li><a>Mi Perfil</a></li>
+          <li><a>Encontrar conexiones</a></li>
+        </ul>
+        <button class="buttonHeader">Cerrar sesión</button>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="sectionProfile">
+          <div class="containerImageProfile">
+            <img src="./img/black.png" alt="Linn Olsen" />
+          </div>
+          <div class="containerInfoProfile">
+            <div class="infoProfile">
+              <h2>Linn Olsen</h2>
+              <p>Bergen, Noruega</p>
+              <p>
+                Diseñadora de UX/UI | Desarrolladora Frontend | Amante de la
+                naturaleza
+              </p>
+            </div>
+            <div class="infoProfile">
+              <p>
+                Apasionada por crear experiencias digitales hermosas y
+                funcionales. Cuando no está codificando, disfruta explorando los
+                fiordos noruegos y capturando la belleza de la naturaleza en
+                fotografías.
+              </p>
+            </div>
+            <div>
+              <button class="buttonEditoProfile" onclick="editProfile(event)">
+                <img src="./img/gear.png" />
+                Edit profile
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sectionEducation">
+          <div class="containerInfoEducation">
+            <h3>Education</h3>
+            <div>
+              <p>Coding Dojo - Bootcamp de Desarrollo Full Stack</p>
+              <p>Dic 2019 - Mar 2020</p>
+              <p>Triple cinturón negro en Python, MERN y C#</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <div class="sectionRequests">
+          <h3>
+            Solicitudes de Conexión (<span id="numberPendingConnections">2</span
+            >)
+          </h3>
+          <div class="containerRequest" id="pendingConnection1">
+            <div class="requestInfo">
+              <img src="./img/user.png" />
+              <span>Khai Schoroder</span>
+            </div>
+            <div class="requestActions">
+              <button
+                onclick="addConnection(event)"
+                aria-label="Aceptar solicitud"
+              >
+                <img src="./img/Accept.png" />
+              </button>
+              <button
+                onclick="removeConnection(event)"
+                aria-label="Rechazar solicitud"
+              >
+                <img src="./img/Cancel.png" />
+              </button>
+            </div>
+          </div>
+          <div class="containerRequest" id="pendingConnection2">
+            <div class="requestInfo">
+              <img src="./img/user.png" />
+              <span>Amira El-Masry</span>
+            </div>
+            <div class="requestActions">
+              <button
+                onclick="addConnection(event)"
+                aria-label="Aceptar solicitud"
+              >
+                <img src="./img/Accept.png" />
+              </button>
+              <button
+                onclick="removeConnection(event)"
+                aria-label="Rechazar solicitud"
+              >
+                <img src="./img/Cancel.png" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sectionConections">
+          <h3>Tus Conexiones (<span id="numberRealConnections">500</span>)</h3>
+          <div class="containerConnections">
+            <div class="containerConnection">
+              <img src="./img/user.png" />
+              <span class="nameUser">Adrien Desplatz</span>
+            </div>
+            <div class="containerConnection">
+              <img src="./img/user.png" />
+              <span class="nameUser">Aarav Patel</span>
+            </div>
+            <div class="containerConnection">
+              <img src="./img/user.png" /> <span>Lina Kovacevic</span>
+            </div>
+            <div class="containerConnection">
+              <img src="./img/user.png" />
+              <span class="nameUser">Mateo Hernández</span>
+            </div>
+            <div class="containerConnection">
+              <img src="./img/user.png" />
+              <span class="nameUser">Yuna Kim</span>
+            </div>
+            <div class="containerConnection">
+              <img src="./img/user.png" />
+              <span class="nameUser">Liam O'Brien</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+}
+
+h2,
+ul {
+  margin: 20px;
+}
+
+ul {
+  margin: 30px !important;
+}
+
+.item {
+  width: 80%;
+  height: 50px;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 80%;
+}
+
+#boton {
+  cursor: pointer;
+  width: 80%;
+  margin-top: 10px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .item {
+    width: 60%;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background-color: #79c37b">
+        <h1 style="
+          color: white;
+          padding: 2em;
+          text-align: center;
+          font-weight: bold;
+        ">
+            Bienvenido a ECOEXPRESS
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Materiales Aceptados</h2>
+            <ul>
+                <li>Carton: $10 por kg</li>
+                <li>Vidrio: $8 por kg</li>
+                <li>Plástico: $12 por kg</li>
+                <li>Electrónicos: $20 por unidad</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Agendar Retiro</h2>
+            <br />
+            <form id="formulario" action="#" method="post">
+                <div class="item">
+                    <label for="nombre">Nombre</label>
+                    <br />
+                    <input type="texto" id="nombre" nombre="nombre" placeholder="Tu nombre" />
+                </div>
+                <div class="item">
+                    <label for="direccion">Dirección</label>
+                    <br />
+                    <input type="texto" id="direccion" nombre="direccion" placeholder="Tu dirección" />
+                </div>
+                <div class="item">
+                    <label for="material">Material</label>
+                    <br />
+                    <select id=" material" name="material">
+                        <option value="carton">Carton</option>
+                        <option value="vidrio">Vidrio</option>
+                        <option value="plastico">Plástico</option>
+                        <option value="electronicos">Electrónicos</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <input id="boton" type="submit" value="Agendar" />
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 ECOEXPRESS. Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

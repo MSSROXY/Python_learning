@@ -1,0 +1,164 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2.5%;
+  width: 95%;
+  color: #fff;
+  .navbarHeader {
+    display: flex;
+    gap: 1.25rem;
+    ul {
+      display: flex;
+      gap: 1.25rem;
+      list-style-type: none;
+      li {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .buttonHeader {
+      background-color: #42bcd4;
+      padding: 8px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #fff;
+      border: none;
+      &:hover{
+        background-color: hotpink;
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  column-gap: 4rem;
+  width: 95%;
+  margin: 2rem auto;
+}
+section {
+  width: 55%;
+}
+aside {
+  width: 45%;
+}
+
+.sectionRequests,
+.sectionConections,
+.sectionProfile,
+.sectionEducation {
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.sectionProfile {
+  .containerImageProfile {
+    background-color: #42bcd4;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    height: 7rem;
+    img {
+      position: absolute;
+      margin: 2.5rem;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+  }
+  .containerInfoProfile {
+    padding: 2.5rem;
+    margin: 2.75rem 0 0 0;
+    .infoProfile {
+      margin-bottom: 1.5rem;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .buttonEditoProfile {
+      border: none;
+      background: none;
+      color: #4091ff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      img {
+        width: 15px;
+      }
+    }
+  }
+}
+
+.sectionEducation {
+  margin-top: 2rem;
+  .containerInfoEducation {
+    padding: 2rem;
+  }
+}
+.sectionRequests {
+  padding: 2rem;
+  .containerRequest {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    img {
+      width: 30px;
+      border: 2.5px solid #22bbd1;
+      border-radius: 5px;
+    }
+    .requestInfo {
+      display: flex;
+      align-items: center;
+      column-gap: 0.75rem;
+    }
+    .requestActions {
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+      button{
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+      img {
+        border: none;
+        border-radius: none;
+      }
+    }
+  }
+}
+.sectionConections {
+  margin-top: 2rem;
+  padding: 2rem;
+  .containerConnection {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    img {
+      width: 35px;
+      height: 35px;
+      border: 1.5px solid black;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}

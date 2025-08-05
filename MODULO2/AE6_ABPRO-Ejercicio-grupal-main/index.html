@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineFlash</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-4">🎬 Bienvenidos a CineFlash</h1>
+    <div class="row" id="movies-container">
+      <!-- Aquí se inyectarán las tarjetas de películas desde jQuery -->
+    </div>
+  </div>
+
+  <!-- Modal de Reserva -->
+  <div class="modal fade" id="reservationModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="reservationForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Reserva de Entradas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-2">
+              <label>Película</label>
+              <input type="text" class="form-control" id="movieName" readonly>
+            </div>
+            <div class="mb-2">
+              <label>Horario</label>
+              <select class="form-select" id="movieTime" required>
+                <option disabled selected>Selecciona una hora</option>
+                <option>16:00</option>
+                <option>19:00</option>
+                <option>22:00</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label>Cantidad de Asientos</label>
+              <input type="number" class="form-control" min="1" required>
+            </div>
+            <hr>
+            <p><strong>Pago (simulado)</strong></p>
+            <input type="number" class="form-control mb-2" placeholder="Número de tarjeta" required>
+            <input type="text" class="form-control mb-2" placeholder="Nombre del titular" required>
+            <input type="number" class="form-control mb-2" placeholder="CVV" required>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Confirmar Reserva</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap + jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

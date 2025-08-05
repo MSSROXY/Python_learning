@@ -1,0 +1,15 @@
+body {
+  background-color: #fffcf2;
+}
+
+.containerForm {
+  padding: 2rem;
+  .titleForm {
+    color: #eb5e28;
+  }
+  .form {
+    padding: 2rem;
+    background: #ccc5b9;
+    display: inline-block;
+  }
+}
