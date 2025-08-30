@@ -1,0 +1,95 @@
+# 01 .select
+SELECT * FROM users;
+SELECT name FROM users;
+SELECT name, user_id FROM users;
+
+# 02. distinct
+SELECT DISTINCT * FROM users;
+SELECT DISTINCT age FROM users;
+
+# 03. where
+SELECT * FROM users WHERE age = 15;
+SELECT name FROM users WHERE age = 15;
+SELECT DISTINCT age FROM users WHERE age = 15;
+
+# 04. orderby
+SELECT * FROM users ORDER BY age;
+SELECT * FROM users ORDER BY age DESC;
+SELECT * FROM users WHERE email = 'sara@email.com' ORDER BY age DESC;
+SELECT name FROM users WHERE email = 'sara@email.com' ORDER BY age DESC;
+
+# 05. like
+SELECT * FROM users WHERE email LIKE '%email.com';
+SELECT * FROM users WHERE email LIKE '%@%';
+
+# 06. not
+SELECT * FROM users WHERE NOT email = 'sara@email.com';
+SELECT * FROM users WHERE NOT email = 'sara@email.com' AND age = 15;
+SELECT * FROM users WHERE NOT email = 'sara@email.com' OR age = 15;
+
+# 07. limit
+SELECT * FROM users LIMIT 3;
+SELECT * FROM users WHERE NOT email = 'sara@email.com' OR age = 15 LIMIT 2;
+
+# 08. null
+SELECT * FROM users WHERE email IS NULL;
+SELECT * FROM users WHERE email IS NOT NULL AND age = 15;
+SELECT name, surname, IFNULL(age,0) AS 'age' FROM users;
+
+# 09. MIN MAX
+SELECT MAX(age) FROM users ;
+SELECT MIN(age) FROM users;
+
+# 10. COUNT
+SELECT COUNT(*) FROM users;
+SELECT COUNT(age) FROM users;
+
+# 11. SUM
+SELECT SUM(age) FROM users;
+
+# 12. AVG (AVERAGE)
+SELECT AVG(age) FROM users;
+
+# 13. IN
+SELECT * FROM users WHERE name IN('roxy', 'sara');
+
+# 14. BETWEEN
+SELECT * FROM users WHERE age BETWEEN 20 AND 30;
+
+# 15. ALIAS
+SELECT name, init_date AS 'Fecha de inicio en programación' FROM users WHERE age BETWEEN 20 AND 30;
+
+# 16. CONCAT y GROUP
+SELECT CONCAT('Nombre: ',name,', Apellidos: ',surname) FROM users;
+SELECT CONCAT(name,' ', surname) AS 'Nombre completo' FROM users;
+
+SELECT MAX(age) FROM users GROUP BY age;
+SELECT COUNT(age), age FROM users GROUP BY age;
+SELECT COUNT(age), age FROM users GROUP BY age ORDER BY age ASC;
+SELECT COUNT(age), age FROM users WHERE age > 15 GROUP BY age ORDER BY age ASC;
+
+# 17. HAVING
+SELECT COUNT(age) FROM users HAVING COUNT(age) > 3;
+
+# 18. CASE
+SELECT *,
+CASE
+	WHEN age >= 17 THEN 'Es mayor de edad'
+    ELSE 'Es menor de edad'
+END AS agetext
+FROM users;
+
+SELECT *,
+CASE
+	WHEN age >= 17 THEN TRUE
+    ELSE FALSE
+END AS '¿Es mayor de edad?'
+FROM users;
+
+SELECT *,
+CASE
+	WHEN age > 18 THEN 'Es mayor de edad'
+	WHEN age = 18 THEN 'Acaba de cumplir la mayoría de edad'
+    ELSE 'Es menor de edad'
+END AS '¿Es mayor de edad?'
+FROM users;
