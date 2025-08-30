@@ -1,0 +1,11 @@
+# INSERT INTO
+INSERT INTO users (user_id, name, surname) VALUES (8, 'Maria', 'López');
+INSERT INTO users (name, surname) VALUES ('Paco', 'Pérez');
+INSERT INTO users (user_id, name, surname) VALUES (11, 'El', 'Merma');
+
+# ACTUALIZAR: UPDATE
+UPDATE users SET age = '21' WHERE user_id = 11;
+UPDATE users SET age = 20, init_date = '2020-10-12' WHERE user_id = 11;
+
+# DELETE
+DELETE FROM users WHERE user_id= 11;
