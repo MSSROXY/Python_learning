@@ -1,0 +1,52 @@
+CREATE TABLE persons3(
+	id INT NOT NULL, # restricción not null
+    name VARCHAR(100) NOT NULL, 
+    age INT,
+    email VARCHAR(50),
+    created DATETIME,
+    UNIQUE(id) #restricción UNIQUE
+)
+
+CREATE TABLE persons4(
+	id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    email VARCHAR(50),
+    created DATETIME,
+    UNIQUE(id),
+    PRIMARY KEY(id) #creacion primary key
+)
+
+CREATE TABLE persons5(
+	id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    email VARCHAR(50),
+    created DATETIME,
+    UNIQUE(id),
+    PRIMARY KEY(id),
+    CHECK(age>=18) #restricción check
+)
+
+CREATE TABLE persons6(
+	id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    email VARCHAR(50),
+    created DATETIME DEFAULT CURRENT_TIMESTAMP(), # dato por default
+    UNIQUE(id),
+    PRIMARY KEY(id),
+    CHECK(age>=18)
+)
+CREATE TABLE persons7(
+	id INT NOT NULL AUTO_INCREMENT, #incremental
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    email VARCHAR(50),
+    created DATETIME DEFAULT CURRENT_TIMESTAMP(),
+    UNIQUE(id),
+    PRIMARY KEY(id),
+    CHECK(age>=18)
+)
+
+DROP TABLE persons8 #BORRAR TABLA
