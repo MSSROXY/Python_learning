@@ -4,3 +4,6 @@
 [submodule "MODULO2/M2_AE6_ABP-Ejercicio-individual"]
 	path = MODULO2/M2_AE6_ABP-Ejercicio-individual
 	url = git@github.com:MSSROXY/M2_AE6_ABP-Ejercicio-individual.git
+[submodule "MODULO5/Ejercicios/AE2_ABP-Ejercicio-individual-Actividad_Opcional"]
+	path = MODULO5/Ejercicios/AE2_ABP-Ejercicio-individual-Actividad_Opcional
+	url = git@github.com:MSSROXY/AE2_ABP-Ejercicio-individual-Actividad_Opcional.git
