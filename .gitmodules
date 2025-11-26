@@ -16,3 +16,6 @@
 [submodule "MODULO3/M3_Evaluacion_portafolio"]
 	path = MODULO3/M3_Evaluacion_portafolio
 	url = git@github.com:MSSROXY/M3_Evaluacion_portafolio.git
+[submodule "MODULO5/M5_Evaluacion_Portafolio"]
+	path = MODULO5/M5_Evaluacion_Portafolio
+	url = git@github.com:MSSROXY/M5_Evaluacion_Portafolio.git
