@@ -19,3 +19,6 @@
 [submodule "MODULO5/M5_Evaluacion_Portafolio"]
 	path = MODULO5/M5_Evaluacion_Portafolio
 	url = git@github.com:MSSROXY/M5_Evaluacion_Portafolio.git
+[submodule "MODULO4/M4_AE2_ABP-Ejercicio-individual"]
+	path = MODULO4/M4_AE2_ABP-Ejercicio-individual
+	url = git@github.com:MSSROXY/M4_AE2_ABP-Ejercicio-individual.git
