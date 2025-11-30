@@ -40,3 +40,6 @@
 [submodule "MODULO6/M6_AE4_ABPRO-Ejercicio-grupal"]
 	path = MODULO6/M6_AE4_ABPRO-Ejercicio-grupal
 	url = git@github.com:MSSROXY/M6_AE4_ABPRO-Ejercicio-grupal.git
+[submodule "MODULO6/M6_AE5_ABPRO-Ejercicio-grupal"]
+	path = MODULO6/M6_AE5_ABPRO-Ejercicio-grupal
+	url = git@github.com:MSSROXY/M6_AE5_ABPRO-Ejercicio-grupal.git
