@@ -49,3 +49,6 @@
 [submodule "MODULO6/M6_AE6_ABP-Ejercicio-individual"]
 	path = MODULO6/M6_AE6_ABP-Ejercicio-individual
 	url = git@github.com:MSSROXY/M6_AE6_ABP-Ejercicio-individual.git
+[submodule "MODULO6/M6_Evaluacion-del-modulo"]
+	path = MODULO6/M6_Evaluacion-del-modulo
+	url = git@github.com:MSSROXY/M6_Evaluacion-del-modulo.git
