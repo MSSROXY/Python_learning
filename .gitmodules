@@ -58,3 +58,6 @@
 [submodule "MODULO7/M7_AE2_ABP-Ejercicio-individual"]
 	path = MODULO7/M7_AE2_ABP-Ejercicio-individual
 	url = git@github.com:MSSROXY/M7_AE2_ABP-Ejercicio-individual.git
+[submodule "MODULO7/M7_AE3_ABPRO-Ejercicio-grupal"]
+	path = MODULO7/M7_AE3_ABPRO-Ejercicio-grupal
+	url = git@github.com:MSSROXY/M7_AE3_ABPRO-Ejercicio-grupal.git
